@@ -1,0 +1,231 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute 
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Daniel L Marks <xleafr@gmail.com> 3/28/2015
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page 
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%		
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[margin]{res}  
+
+% XeLaTeX setup
+\usepackage{fontspec} % in order to use other fonts
+%\setmainfont[Mapping=tex-text]{Minion Pro} % main font
+%\setsansfont[Mapping=tex-text]{AkzidenzGrotesk BQ Light} % sans font
+%\setmainfont[Mapping=tex-text]{Bell MT} % main font
+\setsansfont[Mapping=tex-text]{Calibri} % sans font
+
+% Increase text height
+\textheight=700pt
+
+\usepackage{enumitem}
+\usepackage[colorlinks=false]{hyperref}
+
+\newenvironment{benumerate}[1]{
+    \let\oldItem\item
+    \def\item{\addtocounter{enumi}{-2}\oldItem}
+    \begin{enumerate}[leftmargin=*,noitemsep]
+    \setcounter{enumi}{#1}
+    \addtocounter{enumi}{1}
+}{
+    \end{enumerate}
+}
+
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\usepackage{ragged2e}
+
+\renewcommand*\labelenumi{[\theenumi]}
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\name{\sf \Large Han Wang}
+\address{\\ \\Website: \url{https://hannnwang.github.io}\\}
+%\address{\\ \\Github : \url{https://github.com/hannnwang}}
+\address{\\ \\Email : hwang310@ed.ac.uk\\}
+% Uncomment to add a third address
+%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
+%-------------------------------------------------------------------------------
+
+\begin{resume}
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\section{{\normalfont RESEARCH INTERESTS}}
+\textbf{Physical Oceanography and Fluid Dynamics}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item[--]{Wave-current interactions and disentanglement}
+\item[--]{Submesoscale ocean dynamics}
+%\item[--]{Analysis of observational data}
+\item[--]{Statistical fluid mechanics}
+\item[--]{Deep learning}
+\end{itemize}
+
+\section{{\normalfont EDUCATION}}
+2015-2020, \textbf{Courant Institute, New York University(NYU)} 
+\begin{itemize}[leftmargin=*,noitemsep]
+\item[]{Ph.D. Atmosphere-Ocean Science and Mathematics}
+\item[]{Dissertation advisor: Oliver B{\"u}hler}
+\end{itemize}
+\vspace*{-2.5mm}
+2011-2015, \textbf{University of Science and Technology of China(USTC)} 
+\begin{itemize}[leftmargin=*,noitemsep]
+\item[]{B.S. Atmospheric Sciences}
+\item[]{Dissertation advisor: Rui Li}
+\end{itemize}
+
+\section{{\normalfont WORK \\EXPERIENCE}}
+2020/09--2022/03 (1.5 years), Postdoctoral Researcher
+\begin{itemize}[leftmargin=*,noitemsep]
+\item[]{Department of Physics, University of Toronto}
+\item[]{Supervised by Nicolas Grisouard}
+\end{itemize}
+2022/04-2024/04 (expected 2 years), Postdoctoral Research Associate
+\begin{itemize}[leftmargin=*,noitemsep]
+\item[]{School of Mathematics, University of Edinburgh}
+\item[]{Supervised by  Jacques Vanneste and William R. Young }
+\end{itemize}
+%
+%\section{{\normalfont TECHNICAL\\SKILLS}}
+%\begin{itemize}[leftmargin=*,noitemsep]
+%\item[--]{Programming language and computational software : }
+%\end{itemize}
+%\begin{itemize}[leftmargin=16pt,noitemsep]
+%\item[]{Proficient in Python, MATLAB,  Wolfram Mathematica}
+%\item[]{Some experience in C, Fortran 90, shell scripting (sh/bash)}
+%\end{itemize}
+%\begin{itemize}[leftmargin=*,noitemsep]
+%\item[--]{Editing tools : Adobe Creative Suite, \LaTeX, Microsoft Office}
+%\end{itemize}
+
+
+\section{{\normalfont REFEREED\\ARTICLES}}
+\begin{benumerate}{4}
+\item Wang, H., Grisouard, N., Salehipour, H., Nuz, A., Poon, M., and Ponte, A. L. (2022). \textit{A deep learning approach to extract internal tides scattered by geostrophic turbulence}. Geophysical Research Letters, 49(11), e2022GL099400.
+\item Khatri, H., Griffies, S. M., Uchida, T., Wang, H.,  and Menemenlis, D. (2021). \textit{Role of mixed-layer instabilities in the seasonal evolution of eddy kinetic energy spectra in a global submesoscale permitting simulation.} Geophysical Research Letters, 48(18), e2021GL094777.
+\item Wang, H., and B{\"u}hler, O. (2021). \textit{Anisotropic statistics of Lagrangian structure functions and Helmholtz decomposition.} Journal of Physical Oceanography, 51(5), 1375-1393.
+\item Wang, H., and B{\"u}hler, O. (2020). \textit{Ageostrophic corrections for power spectra and wave–vortex decomposition.} Journal of Fluid Mechanics, 882.
+\item[] -- Highlighted in \href{https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/untangling-waves-and-vortices-in-the-atmospheric-kinetic-energy-spectra/1BEB1ABC32CD2CFAB99BAFEE4712CD0C}{Focus on Fluids}
+\end{benumerate}
+
+\section{{\normalfont RESEARCH\\IN PROGRESS}}
+\begin{itemize}
+\item[--] B\^{o}as, A.B.V., Vanneste J.,  Wang, H., and Young, W.R. \textit{Swell scattering.} \href{https://hannnwang.github.io/slide_AMS103_2023.pdf}{[slides]}
+%\item[--] B\^{o}as, A.B.V., Vanneste J.,  Wang, H., and Young, W.R. \textit{The imprint of ocean currents on surface wave significant wave height.} 
+\item[--]  Grisouard, N., Jeffery U. and Wang, H., \textit{Synergy with surface density observations in a deep learning approach to disentangle balanced flows and internal tides.} \href{https://hannnwang.github.io/slide_Jeff_EWM2023-1.pdf}{[slides]}
+%\item[--] Arbic, B.K., Grisouard, N., Guan, L.-X., Thakur, R., and Wang, H.,   \textit{Performance of a deep learning approach to extract incoherent tides in a high-resolution global ocean model.}  
+\item[--] Balwada, D., Wang, H., and Xie, J.-H. \textit{Lagrangian-filtered second order structure functions and applications to surface drifter data.} \href{https://hannnwang.github.io/slide_trr_2023.pdf}{[slides]}
+\end{itemize}
+
+\section{{\normalfont TEACHING}}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item[--]{Workshop tutor (University of Edinburgh): Mathematics in Action (Fluid Dynamics)  }
+\item[--]{Undergraduate recitation leader  (Courant Institute): Vector Calculus}
+\item[--]{Graduate course grader  (Courant Institute): Applied Stochastic Analysis, Fluid Dynamics}
+\end{itemize}
+\section{{\normalfont RESEARCH\\SUPERVISION}}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item[--]{Undergraduate students: Kerryn Van Rooyen, University of Toronto, 2022/05-2022/08; Lingxiao Guan, University of Michigan, 2021/07-2021/11}
+\item[--]{Graduate students: Jeff Uncu, University of Toronto, 2022/10-present}
+\end{itemize}
+
+\section{{\normalfont SELECTED\\CONFERENCE\\ PRESENTATIONS}}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item[--]``Dynamical insights from frequency-filtered Lagrangian structure functions". TRR 181 Eddy-Wave Meeting, virtual, Feb 2023
+\item[--] ``Imprint of ocean currents on significant wave height." 103rd American Meteorological Society Annual Meeting (23rd Conference on Air-Sea Interaction), virtual, Jan 2023
+\item[--] “A deep learning approach to extract surface internal tidal signals scattered by geostrophic turbulence.”  Oberwolfach Workshop 2238 - Multiscale Wave-Turbulence Dynamics in the Atmosphere and Ocean, Oberwolfach, Germany, Sep 2022
+\item[--] “Internal tidal extraction: challenges from scatterings by vortices, and hopes for a deep learning solution”, Surface Water and Ocean Topography (SWOT) Science Team Meeting, virtual, Jun 2022
+%\item[--]  “A deep learning approach to extract surface internal tidal signals scattered by geostrophic turbulence.” IX International Symposium on Stratified Flows, Cambridge, UK, Aug 2022 
+\item[--] “Extraction of tidal signals from a machine learning approach”, The challenge of understanding rapidly changing small-scale ocean dynamics: preparation for SWOT, Ocean Sciences Meeting, virtual, Apr 2022
+%\item another SWOT stuff I did under the same session with Spencer Jones
+\item[--] “Anisotropic statistics of Lagrangian structure functions and Helmholtz decomposition”, Lagrangian methods for atmosphere and ocean sciences, EGU General Assembly, virtual, Apr 2021 
+\item[--] “Generalizing the “BCF14” method to anisotropic cases”. Meeting on eddies and internal waves with TRR Mercator fellows, TRR 181, virtual, Mar 2021
+\item[--] “Anisotropic Helmholtz decomposition of Lagrangian Tracer Data”. Poster session for Mesoscale and Submesoscale Ocean Dynamics, 22nd Conference on Atmospheric and Oceanic Fluid Dynamics, Maine, USA, Jun 2019
+\item[--] “Wave-Vortex Decomposition of 1D ship-track data with weak nonlinearity in the balanced flow”. Poster session for Theoretical Advances in AOFD, 21st Conference on Atmospheric and Oceanic Fluid Dynamics, Oregon, USA Jun 2017
+\end{itemize}
+%-------------------------------------------------------------------------------
+\section{{\normalfont HONORS}}\begin{itemize}[leftmargin=*,noitemsep]
+\item[--]{ MacCracken Fellowship, five-year graduate student award at NYU, 2015-2020}
+\item[--]{\textit{Zhao Jiuzhang} Sci-Tech Elite Class of Modern Earth and Space Science, USTC, 2013-2015}
+%\item[--]{Receieved fellowship for undergraduate summer research overseas. Funded by China Scholarship Council}
+\end{itemize}
+
+
+\section{{\normalfont EDUCATIONAL \\EXPERIENCE}}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item[--] {2017/07--2017/08, Participant of Les Houches Summer School on Fundamental Aspects of Turbulent Flows in Climate Dynamics, Les Houches, France; funded by organizer}
+\item[--]{2014/06--2014/08, Visiting scholar at University of Michigan, Ann Arbor, USA. Conducted pedagogical experiments on CMIP5 Models, advised by Xianglei Huang; funded by China Scholarship Council }
+\item[--]{2013/09--2014/01, Exchange student in Physics Department, National Tsing Hua University(NTHU), Taiwan; }funded by NTHU and USTC 
+\end{itemize}
+ 
+ 
+\section{{\normalfont SERVICE}}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item[--]{Journal Referee: Quarterly Journal of the Royal Meteorological Society, Journal of Physical Oceanography, Journal of Advances in Modeling Earth Systems, Journal of Atmospheric and Oceanic Technology}
+%\item[--]{Student host for guest colloquium lunches (2019/09--2020/09)}
+\item[--]{Student Organizer: various seminars and colloquium lunches at CAOS, Courant Institute (2015--2019)}
+\item[--]{Social Volunteer: Courant cSplash (2019/04), NYC H2O (2018-2020)}
+%\item[--]{Frequent volunteer of NYC H2O events including beach cleanups and landscapings}
+%\item[--]{Volunteer photographer at CAOS}
+\end{itemize}
+
+\end{resume}
+\begin{FlushRight}
+\vfill
+\textit{Updated in Apr., 2023}
+\end{FlushRight}
+
+\pagenumbering{gobble}
+
+\let\cleardoublepage\clearpage
+\(\)
+
+
+\end{document}
+
