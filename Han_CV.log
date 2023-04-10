@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (MiKTeX 22.7) (format=lualatex 2023.4.9)  10 APR 2023 01:43
+This is LuaHBTeX, Version 1.15.0 (MiKTeX 22.7) (format=lualatex 2023.4.9)  10 APR 2023 01:45
  restricted system commands enabled.
 **Han_CV.tex
 (./Han_CV.tex
@@ -494,7 +494,7 @@ pe/public/lm/lmroman10-bold.otf><//?/c:/users/jinkou/appdata/local/programs/mikt
 ex/fonts/opentype/public/lm/lmmono10-regular.otf><//?/c:/users/jinkou/appdata/lo
 cal/programs/miktex/fonts/opentype/public/lm/lmroman10-regular.otf><C:/WINDOWS/F
 onts/calibri.ttf>
-Output written on Han_CV.pdf (2 pages, 66800 bytes).
+Output written on Han_CV.pdf (2 pages, 66668 bytes).
 
 PDF statistics: 60 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 131072)
