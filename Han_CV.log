@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.5.20)  20 JUN 2023 22:59
+This is LuaHBTeX, Version 1.17.0 (MiKTeX 23.5) (format=lualatex 2023.5.20)  24 JUL 2023 11:14
  restricted system commands enabled.
 **Han_CV.tex
 (./Han_CV.tex
@@ -477,27 +477,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 224--225
  []\TU/lmr/m/it/10 Up-dated in May., 2023
  []
 
-[1])
+[2] [1])
 
 Here is how much of LuaTeX's memory you used:
- 11960 strings out of 478364
+ 11961 strings out of 478364
  125027,1977958 words of node,token memory allocated
  486 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 4 attribute, 64 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 1:2,2:740,3:488,4:199,5:588,6:130,7:9654,8:27,9:639,10:5,11:687
+   avail lists: 1:2,2:740,3:488,4:199,5:588,6:130,7:9681,8:27,9:639,10:5,11:690
  31777 multiletter control sequences out of 65536+600000
  44 fonts using 14516215 bytes
- 72i,8n,86p,326b,368s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,8n,86p,326b,396s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <//?/c:/users/jinkou/appdata/local/programs/miktex/fonts/opentype/public/lm/lmro
 man10-italic.otf><//?/c:/users/jinkou/appdata/local/programs/miktex/fonts/openty
 pe/public/lm/lmroman10-bold.otf><//?/c:/users/jinkou/appdata/local/programs/mikt
 ex/fonts/opentype/public/lm/lmmono10-regular.otf><//?/c:/users/jinkou/appdata/lo
 cal/programs/miktex/fonts/opentype/public/lm/lmroman10-regular.otf><C:/WINDOWS/F
 onts/calibri.ttf>
-Output written on Han_CV.pdf (2 pages, 67635 bytes).
+Output written on Han_CV.pdf (3 pages, 68174 bytes).
 
-PDF statistics: 62 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 131072)
+PDF statistics: 66 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
