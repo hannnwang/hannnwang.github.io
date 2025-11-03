@@ -1,62 +1,8 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Graduate Curriculum Vitae
-% LaTeX Template
-% Version 1.2 (3/28/15)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Rensselaer Polytechnic Institute 
-% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
-%
-% Modified by:
-% Daniel L Marks <xleafr@gmail.com> 3/28/2015
-%
-% Important note:
-% This template requires the res.cls file to be in the same directory as the
-% .tex file. The res.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%-------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%-------------------------------------------------------------------------------
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% You can have multiple style options the legal options ones are:
-%
-%   centered:	the name and address are centered at the top of the page 
-%				(default)
-%
-%   line:		the name is the left with a horizontal line then the address to
-%				the right
-%
-%   overlapped:	the section titles overlap the body text (default)
-%
-%   margin:		the section titles are to the left of the body text
-%		
-%   11pt:		use 11 point fonts instead of 10 point fonts
-%
-%   12pt:		use 12 point fonts instead of 10 point fonts
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\documentclass[margin]{res}  
-
-% XeLaTeX setup
-\usepackage{fontspec} % in order to use other fonts
-%\setmainfont[Mapping=tex-text]{Minion Pro} % main font
-%\setsansfont[Mapping=tex-text]{AkzidenzGrotesk BQ Light} % sans font
-%\setmainfont[Mapping=tex-text]{Bell MT} % main font
-\setmainfont[Mapping=tex-text]{Arial} % sans font
-
-% Increase text height
-\textheight=700pt
-
+\documentclass[a4paper,12pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
 \usepackage{enumitem}
-\usepackage[colorlinks=false]{hyperref}
+\usepackage{hyperref}
+\usepackage[official]{eurosym}
 
 \newenvironment{benumerate}[1]{
     \let\oldItem\item
@@ -68,44 +14,24 @@
     \end{enumerate}
 }
 
-\usepackage{xcolor}
-\hypersetup{
-    colorlinks,
-    linkcolor={red!50!black},
-    citecolor={blue!50!black},
-    urlcolor={blue!80!black}
-}
-
-\usepackage{ragged2e}
-
-
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+  
+\title{\textit{Curriculum Vitae}}
+%\author{Han Wang}
+\date{\vspace{-7ex}}
 \begin{document}
+\maketitle{}
+
+\section{Personal Information}
+% Full name, Birth date (YYYY-MM-DD), Home address, Phone number, Email
+Full name:  Han Wang\\
+Work Address: Bundesstr. 53, 20146, Hamburg, Germany\\
+Email: han.wang@uni-hamburg.de\\
+Personal Website: \url{https://hannnwang.github.io/}
 
 
-
-%-------------------------------------------------------------------------------
-%	NAME AND ADDRESS SECTION
-%-------------------------------------------------------------------------------
-\name{\sf \Large Han Wang}
-\address{\\ \\Website: \url{https://hannnwang.github.io}\\}
-%\address{\\ \\Github : \url{https://github.com/hannnwang}}
-\address{\\ \\Email : hannnwangus@gmail.com\\}
-% Uncomment to add a third address
-%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
-%-------------------------------------------------------------------------------
-
-\begin{resume}
-
-%-------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%-------------------------------------------------------------------------------
-%\section{{\normalfont PERSONAL INFORMATION}}
-%\begin{itemize}[leftmargin=*,noitemsep]
-%\item[--]{Birthday: June.16, 1993}
-%\item[--]{Citizenship: Chinese, with Canadian Permanent Residency}
-%\end{itemize}
-
-\section{{\normalfont RESEARCH INTERESTS}}
+\section{Research Interests}
 \textbf{Physical Oceanography and Fluid Dynamics}
 \begin{itemize}[leftmargin=*,noitemsep]
 \item[--]{Wave-mean interactions and disentanglement}
@@ -115,147 +41,203 @@
 \item[--]{Deep learning}
 \end{itemize}
 
-\section{{\normalfont EDUCATION}}
-2011 - 2015, \textbf{University of Science and Technology of China (USTC)} 
+
+\section{Degrees}
 \begin{itemize}[leftmargin=*,noitemsep]
-\item[]{B.S. Atmospheric Sciences}
-\item[]{Dissertation advisor: Rui Li}
+\item 08/2011-07/2015,   B.S. in Atmopheric Sciences, University of Science and Technology of China,
+China. Thesis advisor: Prof. Dr. Rui Li
+\item 09/2015 -07/2020,   PhD in Atmosphere-Ocean Science and Mathematics, Courant Institute of Mathematical Sciences, New York University, United States. Thesis advisor: Prof. Dr. Oliver B{\"u}hler
 \end{itemize}
-\vspace*{-2.5mm}
-2015 - 2020, \textbf{Courant Institute, New York University (NYU)} 
+\section{Employment History }
 \begin{itemize}[leftmargin=*,noitemsep]
-\item[]{Ph.D. Atmosphere-Ocean Science and Mathematics}
-\item[]{Dissertation advisor: Oliver B{\"u}hler}
+\item 09/2024-present,   Project Leader, Theoretical Oceanography,University of Hamburg
+\item 04/2022-09/2024,   Postdoctoral Research Associate, School of Mathematics, University of Edinburgh
+\item09/2020-03/2022,   Postdoctoral Researcher, Department of Physics, University of Toronto
+\end{itemize}
+\textbf{Leaves}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item 07/2020-09/2020,   unemployed due to visa delay caused by Canadian governmental closures during COVID-19
 \end{itemize}
 
-
-\section{{\normalfont WORK \\EXPERIENCE}}
-2020/09 - 2022/03, Postdoctoral Researcher
-\begin{itemize}[leftmargin=*,noitemsep]
-\item[]{Department of Physics, University of Toronto}
-\item[]{Supervised by Nicolas Grisouard}
-\end{itemize}
-2022/04 - 2024/09, Postdoctoral Research Associate
-\begin{itemize}[leftmargin=*,noitemsep]
-\item[]{School of Mathematics, University of Edinburgh}
-\item[]{Supervised by  Jacques Vanneste and William R. Young }
-\end{itemize}
-2024/09 - present ,Research Assistant (Project Leader)
-\begin{itemize}[leftmargin=*,noitemsep]
-\item[]{Institute of Oceanography, University of Hamburg}
-\end{itemize}
-%\section{{\normalfont TECHNICAL\\SKILLS}}
-%\begin{itemize}[leftmargin=*,noitemsep]
-%\item[--]{Programming language and computational software : }
-%\end{itemize}
-%\begin{itemize}[leftmargin=16pt,noitemsep]
-%\item[]{Experienced in Python, MATLAB,  Wolfram Mathematica, shell scripting}
-%\item[]{Some experience in C, Fortran 90}
-%\end{itemize}
-%\begin{itemize}[leftmargin=*,noitemsep]
-%\item[--]{Editing tools : Adobe Creative Suite, \LaTeX, Microsoft Office}
-%\end{itemize}
-
-\section{{\normalfont REFEREED\\ARTICLES}}
-\begin{enumerate}
+\section{Scientific Expertise}
+\subsection{Peer-reviewed Publications}
+\begin{itemize}
 \item \textbf{Wang, H.} and B{\"u}hler, O. (2020). \textit{Ageostrophic corrections for power spectra and wave–vortex decomposition.} Journal of Fluid Mechanics, 882. \href{https://hannnwang.github.io/AgeoSpectraJFM20.pdf}{[manuscript]}
 \item[] -- Highlighted in \href{https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/untangling-waves-and-vortices-in-the-atmospheric-kinetic-energy-spectra/1BEB1ABC32CD2CFAB99BAFEE4712CD0C}{Focus on Fluids}
 \item \textbf{Wang, H.} and B{\"u}hler, O. (2021). \textit{Anisotropic statistics of Lagrangian structure functions and Helmholtz decomposition.} Journal of Physical Oceanography, 51(5), 1375-1393. \href{https://hannnwang.github.io/WangBuhlerJPO21.pdf}{[manuscript]}
 \item Khatri, H., Griffies, S. M., Uchida, T., \textbf{Wang, H.},  and Menemenlis, D. (2021). \textit{Role of mixed-layer instabilities in the seasonal evolution of eddy kinetic energy spectra in a global submesoscale permitting simulation.} Geophysical Research Letters, 48(18), e2021GL094777. \href{https://repository.library.noaa.gov/view/noaa/43143}{[manuscript]}
 \item \textbf{Wang, H.}, Grisouard, N., Salehipour, H., Nuz, A., Poon, M., and Ponte, A. L. (2022). \textit{A deep learning approach to extract internal tides scattered by geostrophic turbulence}. Geophysical Research Letters, 49(11), e2022GL099400. \href{https://essopenarchive.org/doi/full/10.1002/essoar.10508849.2}{[ESSOAR]}
 \item \textbf{Wang, H.}, B\^{o}as, A.B.V., Young, W.R. and Vanneste J. (2023). \textit{Scattering of swell by currents}. Journal of Fluid Mechanics, 975.  \href{https://arxiv.org/abs/2305.12163}{[arXiv]}
-\item \textbf{Wang, H.}, B\^{o}as, A.B.V.,  Vanneste J. and Young, W.R. \textit{Scattering of surface waves by ocean currents: the U2H map}. Journal of Fluid Mechanics,  964. \href{https://arxiv.org/abs/2402.05652}{[arXiv]}
+\item \textbf{Wang, H.}, B\^{o}as, A.B.V.,  Vanneste J. and Young, W.R. (2024). \textit{Scattering of surface waves by ocean currents: the U2H map}. Journal of Fluid Mechanics,  964. \href{https://arxiv.org/abs/2402.05652}{[arXiv]}
 %\href{https://www.youtube.com/watch?v=migsRGIAB-c}{[talk]}
-\item \textbf{Wang, H.}, B\^{o}as, A.B.V.,  Vanneste J. and Young, W.R. \textit{The U2H map explains the effect of (sub)mesoscale turbulence on significant wave height statistics}. Submitted to Journal of Physical Oceanography. \href{https://arxiv.org/abs/2504.21736}{[arXiv]}
-\end{enumerate}
-
-
-
-
-%\section{{\normalfont RESEARCH\\IN PROGRESS}}
-%\begin{itemize}
-%%\href{https://www.youtube.com/watch?v=wzR_IKaSDw8}{[talk]}
-%\item[--] Balwada, D., Wang, H., and Xie, J.-H. \textit{Wave-vortex impact on Gulf of Mexico Kinetic Energy Distribution.} (in prep. for Journal of Physical Oceanography) \href{https://hannnwang.github.io/slide_trr_2023.pdf}{[slides]}  \href{https://www.youtube.com/watch?v=3HQ-iV7y3gI}{[talk]}    
-%%\item[--]  Grisouard, N., Jeffery U. and Wang, H., \textit{Synergy with surface density observations in a deep learning approach to disentangle balanced flows and internal tides.} \href{https://hannnwang.github.io/slide_Jeff_EWM2023-1.pdf}{[slides]}
-%%\item[--] Arbic, B.K., Grisouard, N., Guan, L.-X., Thakur, R., and Wang, H.,   \textit{Performance of a deep learning approach to extract incoherent tides in a high-resolution global ocean model.}  
-%\end{itemize}
-
-\section{{\normalfont TEACHING}}
+\item \textbf{Wang, H.}, B\^{o}as, A.B.V.,  Vanneste J. and Young, W.R. \textit{The U2H map explains the effect of (sub)mesoscale turbulence on significant wave height statistics}. Accepted by Journal of Physical Oceanography. \href{https://arxiv.org/abs/2504.21736}{[arXiv]}
+\end{itemize}
+%\subsection{Submitted Manuscripts}
+%***
+\subsection{Successful grant applications}
+Received as principal applicant:
 \begin{itemize}[leftmargin=*,noitemsep]
-\item[--]{Substitute lecturer: Industrial Mathematics [2022-2023 SEM1]}
-\item[--]{Workshop tutor (University of Edinburgh): Mathematics in Action B (Fluid Dynamics) [2022-2023 SEM2]}
-\item[--]{Undergraduate recitation leader  (Courant Institute): Vector Analysis [MATH-UA.0224-001, Spring 2018]}
-\item[--]{Graduate course grader  (Courant Institute): Methods of Applied Maths, Applied Stochastic Analysis, Fluid Dynamics}
+\item Project W2: ``Observed and simulated internal tides: generation, modification by eddies, and contribution to energy budget'' of the Collaborative Research Centre TRR 181:  ``Energy transfers in Atmosphere and Ocean''. Deutsche Forschungsgemeinschaft (Projektnummer 274762653).  Award date  06/2024. Funded period 07/2024 - 06/2028. Funded value \euro 621,100. 
 \end{itemize}
-\section{{\normalfont RESEARCH\\MENTORSHIP}}
+Named as intended postdoctoral researcher:
 \begin{itemize}[leftmargin=*,noitemsep]
-\item[--]{MSc project supervision : Sole supervisor of Simin Wang for Computational and Applied Mathematics MSc, University of Edinburgh, 2023/06 - 2023/08} 
-\item[--]{PhD project supervision: Jeff Uncu, University of Toronto, 2022/10 -- 2024/08}
-\item[--]{Undergraduate students: Kerryn Van Rooyen, University of Toronto, 2022/05-2022/08; Lingxiao Guan, University of Michigan, 2021/07-2021/11}
-%Aitor, Belal, Buu-Lik
+\item ``Disentangling internal waves and (sub–)mesoscale motions in satellite altimetry: Northeast Pacific”. Canadian Space Agency.  Award date 12/2023.  Funded period 04/2024 – 03/2027 (estimated). Funded value \$225,000. The other applicants are: Jody Klymak (principal applicant), Guoqi Han (co-applicant), Tetjana Ross (co-applicant). 
+\item``Phase Averaged Deferred Correction for Multi-Timescale Systems”. UK Research and Innovation (Project Reference: EP/Y032624/1). Funded period 06/2024 – 02/2025. Funded value \textsterling78,966. The other applicant is Hossein Kafiabad (principal applicant). 
 \end{itemize}
+% List any major grants received. Specify who awarded the grant, the amount awarded,
+% when it was awarded, and whether you received the grant as the principal applicant or as a
+% co-applicant. In the latter case, the principal applicant and other co-applicants should be
+% named.
 
-\section{{\normalfont SELECTED\\CONFERENCE\\ PRESENTATIONS}}
+
+\subsection{Conference presentations}
+\textbf{Oral Presentations}
 \begin{itemize}[leftmargin=*,noitemsep]
-%TAP-GFD, Ocean Sciences, TRR seminar on surface waves
-\item[--]``Imprint of Currents on Surface Waves".  WISE Zoominar on Waves over spatial inhomogeneity, virtual, Oct 2023
-%EGU swell presentation
-\item[--]``Dynamical insights from frequency-filtered Lagrangian structure functions". TRR 181 Eddy-Wave Meeting, virtual, Feb 2023
-\item[--] ``Imprint of ocean currents on significant wave height." 103rd American Meteorological Society Annual Meeting (23rd Conference on Air-Sea Interaction), virtual, Jan 2023
-\item[--] “A deep learning approach to extract surface internal tidal signals scattered by geostrophic turbulence.”  Oberwolfach Workshop 2238 - Multiscale Wave-Turbulence Dynamics in the Atmosphere and Ocean, Oberwolfach, Germany, Sep 2022
-\item[--] “Internal tidal extraction: challenges from scatterings by vortices, and hopes for a deep learning solution”, Surface Water and Ocean Topography (SWOT) Science Team Meeting, virtual, Jun 2022
-%\item[--]  “A deep learning approach to extract surface internal tidal signals scattered by geostrophic turbulence.” IX International Symposium on Stratified Flows, Cambridge, UK, Aug 2022 
-\item[--] “Extraction of tidal signals from a machine learning approach”, The challenge of understanding rapidly changing small-scale ocean dynamics: preparation for SWOT, Ocean Sciences Meeting, virtual, Apr 2022
-%\item another SWOT stuff I did under the same session with Spencer Jones
-%\item[--] “Anisotropic statistics of Lagrangian structure functions and Helmholtz decomposition”, Lagrangian methods for atmosphere and ocean sciences, EGU General Assembly, virtual, Apr 2021 
-\item[--] “Generalizing the “BCF14” method to anisotropic cases”. Meeting on eddies and internal waves with TRR Mercator fellows, TRR 181, virtual, Mar 2021
-\item[--] “Anisotropic Helmholtz decomposition of Lagrangian Tracer Data”. Poster session for Mesoscale and Submesoscale Ocean Dynamics, 22nd Conference on Atmospheric and Oceanic Fluid Dynamics, Maine, USA, Jun 2019
-\item[--] “Wave-Vortex Decomposition of 1D ship-track data with weak nonlinearity in the balanced flow”. Poster session for Theoretical Advances in AOFD, 21st Conference on Atmospheric and Oceanic Fluid Dynamics, Oregon, USA Jun 2017
+\item Born\"{o} workshop on surface waves,  Stora Born\"{o}, Sweden,  `` The  U2H map  explains effects of (sub)mesoscale currents on significant wave height'', Aug 2025
+\item GFD Symposium in memory of Vladimir Zeitlin, Paris, France, ``Synergizing Surface Fields in a Deep-learning Extraction of Internal Tides'', May 2025.
+\item TAPGFD (Theoretical and Practical Perspectives in Geophysical Fluid Dynamics, Bengaluru, India, virtual presentation, ``A deep learning approach to extract surface internal tidal signals scattered by geostrophic turbulence”, May 2024.
+\item Ocean Sciences Meeting, New Orleans,  United States, ``Imprint of Currents on Surface Waves: solutions in two regimes ”, Feb 2024.
+\item WISE Zoominar on Waves over spatial inhomogeneity, virtual.``Imprint of Currents on Surface Waves", Oct 2023.
+\item  Challenger Society Ocean Modelling Conference, Southampton, United Kingdom, ``Dynamical insights from Lagrangian-filtered structure functions applied to drifter observations”, Sep 2023.
+\item EGU General Assembly, Vienna, Austria, ``Imprint of ocean currents on significant wave height”, Apr 2023.
+\item  TRR 181 Eddy-Wave Meeting, Hamburg, Germany, virtual presentation, ``Dynamical insights from frequency-filtered Lagrangian structure functions", Feb 2023.
+\item 103rd American Meteorological Society Annual Meeting (23rd Conference on Air-Sea Interaction), United States, virtual presentation, ``Imprint of ocean currents on significant wave height", Jan 2023.
+\item Oberwolfach Workshop 2238 - Multiscale Wave-Turbulence Dynamics in the Atmosphere and Ocean, Oberwolfach, Germany, ``A deep learning approach to extract surface internal tidal signals scattered by geostrophic turbulence”, Sep 2022.
+\item IX International Symposium on Stratified Flows, Cambridge, UK,``A deep learning approach to extract surface internal tidal signals scattered by geostrophic turbulence”, Aug 2022.
+\item Surface Water and Ocean Topography (SWOT) Science Team Meeting, virtual presentation,``Internal tidal extraction: challenges from scatterings by vortices, and hopes for a deep learning solution”, Jun 2022.
+\item Ocean Sciences Meeting, virtual, ``Extraction of tidal signals from a machine learning approach”, Apr 2022.
+\item EGU General Assembly, virtual, ``Anisotropic statistics of Lagrangian structure functions and Helmholtz decomposition”, Apr 2021.
+\item Meeting on eddies and internal waves with TRR Mercator fellows, TRR 181, virtual, ``Generalizing the “BCF14” method to anisotropic cases”, Mar 2021.
 \end{itemize}
-%\section{{\normalfont INVITED\\SEMINAR\\ PRESENTATIONS}}
-%University of Waterloo, University of Hamburg, Colorado School of Mines, Caltech, UCSD,  TIFR Centre for Applicable Mathematics,
-
-%-------------------------------------------------------------------------------
-\section{{\normalfont HONORS}}\begin{itemize}[leftmargin=*,noitemsep]
-\item[--]{MacCracken Fellowship, five-year graduate student award at NYU, 2015-2020}
-%\item[--]{\textit{Zhao Jiuzhang} Sci-Tech Elite Class of Modern Earth and Space Science, USTC, 2013-2015}
-%\item[--]{Receieved fellowship for undergraduate summer research overseas. Funded by China Scholarship Council}
+\textbf{Poster Presentations}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item 12th Warnem\"{u}nde Turbulence Days (WTD) on ``Waves and Turbulence", Insel Vilm, Germany, ``Synergizing Surface Fields in a Deep-learning Extraction of Internal Tides'', Sep 2025.
+\item  Climate Exploration in Lively Liaison with the Ocean, Hamburg, Germany, `` The  U2H map  explains effects of (sub)mesoscale currents on significant wave height'', Sep 2025
+\item 22nd Conference on Atmospheric and Oceanic Fluid Dynamics, Maine, UNITED STATES, ``Anisotropic Helmholtz decomposition of Lagrangian Tracer Data”, Jun 2019.
+\item 21st Conference on Atmospheric and Oceanic Fluid Dynamics, Oregon, United States, ``Wave-Vortex Decomposition of 1D ship-track data with weak nonlinearity in the balanced flow”, Jun 2017.
+\end{itemize}
+\subsection{Invited seminar talks/research visits }
+\begin{itemize}[leftmargin=*,noitemsep]
+\item University of Bremen, Bremen, Germany, ``Diagnosing scale-dependent dynamics from limited observations”. Jan 2025.
+\item University of Edinburgh, Edinburgh, United Kingdom. Research visit only (no talk given). Nov 2024.
+\item TIFR Centre for Applicable Mathematics, Benglaluru, India, virtual presentation, ``A deep learning approach to extract internal tides scattered by geostrophic turbulence”. Oct 2024.
+\item Durham University, United Kingdom, ``Scattering of surface waves by oceanic currents”. Jun 2024.
+\item University of California, Los Angeles, California, United States. Research visit only (no talk given). Mar 2024.
+\item California Institute of Technology , California, United States, ``Scattering of surface waves by oceanic currents”. Mar 2024.
+\item University of California San Diego, California, United States, ``Scattering of surface waves by oceanic currents”. Mar 2024.
+\item Colorado School of Mines, Colorado, United States, ``Scattering of surface waves by oceanic currents”. Feb 2024.
+\item University of Hamburg, Hamburg, Germany,``A deep learning approach to extract internal tides scattered by geostrophic turbulence”. Jul 2023.
+\item University of Waterloo, Canada, ``Disentangling balanced and unbalanced flows under weak nonlinearity”, virtual.  Sep 2021.
 \end{itemize}
 
 
-%\section{{\normalfont EDUCATIONAL \\EXPERIENCE}}
+\subsection{Completed referee assignments}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item 2020: Quarterly Journal of the Royal Meteorological Society (1)
+\item 2021: Journal of Atmospheric and Oceanic Technology (1), Journal of Advances in Modeling Earth Systems (1), Journal of Physical Oceanography (2)
+\item 2022: Journal of Physical Oceanography (1)
+\item2023: Geophysical Research Letters (2), Journal of Fluid Mechanics (2)
+\item2024: Nature Communications (1), Journal of Fluid Mechanics (1)
+\item2025: Science Advances (1), Journal of Physical Oceanography (2), Ocean Engineering (1),  European Journal of Mechanics / B Fluids (1)
+\end{itemize}
+
+\subsection{Planning and organizing}
+% Specify your participation in planning and organizing conferences, meetings, etc.
+\begin{itemize}[leftmargin=*,noitemsep]
+\item Convener (1 of the 4) of the Ocean Sciences 2026 session ``Internal and surface gravity waves: evolution, interactions, regime transitions, and energy cascades''. 
+\item Organizer  (1 of the 4) for TAPGFD (Theoretical and Practical Perspectives in Geophysical Fluid Dynamics), a 2-week workshop that took place at ICTS,  Bengaluru, India in May 2024, funded by ICTS and TRR181. I contributed to: the application for the workshop’s funding and location; design and coordination of the workshop program; contacting of invited speakers; selection of participants. 
+\item Various local, regular seminars at Courant Institute and University of Edinburgh.
+\end{itemize}
+
+\subsection{Honours}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item MacCracken Fellowship, five-year graduate student award at NYU, 2015-2020
+\end{itemize}
+\section{Teaching Experience}
+\subsection{Course instructions}
+% Describe your teaching experience in the first, second and third cycles, as well as in 
+% continuing professional development. Specify your role in the courses listed, as well as 
+% their extent and cycle.
+Undergraduate courses
+\begin{itemize}[leftmargin=*,noitemsep]
+\item Substitute lecturer: Industrial Mathematics [2022-2023 SEM1]. University of Edinburgh. Class size: $\sim$ 50. Led all teaching activities for one week. This includes: designing and  recording two 20-minute-long videos on materials (dimensional analysis, similarity solutions) for students to self-study online; designing, making and presenting the slides for a full class lecture (on solving differential equations numerically) in-person; hosted a 2-hour long live-coding and problem-solving workshop in-person over an interactive Jupyter Notebook about the lecture I presented, answering students’ questions live. Moderated the grading of a course project with the instructor. 
+\item Workshop tutor: Mathematics in Action B (Fluid Dynamics) [2022-2023 SEM2]. University of Edinburgh. Class size $\sim$ 40. Worked as a tutor bi-weekly at 2-hour long live-coding and problem-solving workshops, assisting the instructor in answering  students’ questions. Graded one homework assignment. 
+\item Recitation leader: Vector Analysis [MATH-UA 224 002, Spring 2018]. Courant Institute. Class size: 18. Hosted weekly recitation lectures in-person, presenting and explaining exercise problems on blackboard. Helped the instructor check some homework solutions and final exam problems. 
+\end{itemize}
+Graduate courses
+\begin{itemize}[leftmargin=*,noitemsep]
+\item Substitute lecturer (scheduled): Theoretical Ocaenography I [Winter semester 2025/26]. University of Hamburg. Class size: $\sim$ 30. Will deliver 1.5-hour long in-person lectures when the main instructor is away. The first lectures I host are scheduled on Nov.10, 2025 and Nov.13, 2025.
+\item Grader: Methods of Applied Mathematics [MATH-GA 2701, Fall 2018], Applied Stochastic Analysis [MATH-GA 2704, Spring 2019], Fluid Dynamics [MATH-GA 2702.001, Fall 2019], Basic Probability [MATH-GA 2901, Fall 2018]. All were at Courant Institute with class sizes 10-35. Graded homework assignments (roughly bi-weekly) of semester-long graduate classes. In Applied Stochastic Analysis, I helped the instructor check the final exam problems. 
+\end{itemize}
+Conference workshops
+\begin{itemize}[leftmargin=*,noitemsep]
+\item Contributed to the workshop design, presentation slides and interactive codes, and jointly hosted the corresponding 2.5-hour workshop (with one other volunteer) on machine learning basics at TAPGFD: Theoretical and Practical Perspectives in Geophysical Fluid Dynamics, May 2024.
+\end{itemize}
+\subsection{Research supervision}
+\textbf{PhD project (co-)supervision}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item Belal Abdelhadi, University of Hamburg, 2025/02 – present. Student’s funding obtained from my work package in the TRR181 grant, and I led the selection process. Currently I am the main research advisor, with the roles as a Mentor in the student's PhD panel.  Topic: machine learning methods on the extraction of oceanic internal tide signals.  
+\item Jeffrey Uncu, University of Toronto, 2022/10 -- 2024/08 (student admitted in 2019). Unofficial co-supervision. Topic: machine learning methods on the extraction of internal tides.  Student graduated in Fall 2024. Met regularly, contributed to the research plan and offered technical advice. Collaborations lead to 2 full chapters of the student’s PhD thesis.
+\end{itemize}
+
+\textbf{MSc project supervision}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item Simin Wang.   M.Sc. in  Computational and Applied Mathematics, University of Edinburgh, 2023/06 - 2023/08, sole supervisor. Dissertation titled “Pruning U-Net with First-Order Taylor Approximation”. Student graduated in Fall 2023.
+\item Aitor Perez.  M.Sc. in Ocean and Climate Physics in Ocean and Climate Physics at University of Hamburg, 2025/04 – present, 1 of the 2 official supervisors. Proposed dissertation titled ``Deep Learning to Infer Depth-Dependent Eddy Heat Fluxes". Expected graduation 2025/12. 
+\end{itemize}
+
+\textbf{Undergraduate student co-supervision}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item Kerryn Van Rooyen, University of Toronto, 2022/05-2022/08. Unofficial co-supervision.  Topic: investigating small-scale errors of a machine learning algorithm.
+\item Lingxiao Guan, University of Michigan, 2021/07-2021/11. Unofficial co-supervision.  Topic: experimenting with the pix2pixHD algorithm on the extraction of internal tides.
+\end{itemize}
+
+
+\section{Administrative and Management Experience}
+\subsection{Examiner activities}
+% For example: Appointment as a faculty examiner or member of an examining committee;
+% Appointment as a member of an expert panel; National and international collaborative
+% projects; Participation in national and international conferences related to the field of
+% research; Referee assignments and memberships of editorial/advisory boards for
+% international journals. Specify the journals and the number of assignments per year.
+% Specify any received honours, awards, academy memberships, etc.
+\begin{itemize}[leftmargin=*,noitemsep]
+\item PhD panel member (mentor) of Belal Abdelhadi, University of Hamburg, Nov 2025 -- present
+\item PhD panel member of Buu-Lik Duong, University of Bremen, May 2025 -- present
+\item Referee of two M.Sc. projects in Computational and Applied Mathematic, University of Edinburgh, fall 2023.
+\item Judge for the Outstanding Student and PhD candidate Presentation contest at the EGU General Assembly, 04/2023. 
+\end{itemize}
+
+\subsection{Personnel administration}
+\begin{itemize}[leftmargin=*,noitemsep]
+\item Led the selection process of a PhD student at University of Hamburg in 2024. Drafted and distributed the job advertisement. Selected the candidates for interviews from the pool of applicants. 6 interviews were conducted, each around 30 minutes long, hosted by me and 1-2 other faculty panel members. Designed all the pre-prepared interview questions. Informed interviewees the decisions of their applications personally. Completed the administrative paperwork. The student admitted (enrolled in 2025/01) is being supervised by me. 
+\end{itemize}
+%Computing resource applications
 %\begin{itemize}[leftmargin=*,noitemsep]
-%\item[--] {2017/07--2017/08, Participant of Les Houches Summer School on Fundamental Aspects of Turbulent Flows in Climate Dynamics, Les Houches, France; funded by organizer}
-%\item[--]{2014/06--2014/08, Visiting scholar at University of Michigan, Ann Arbor, USA. Conducted pedagogical experiments on CMIP5 Models, advised by Xianglei Huang; funded by China Scholarship Council }
-%\item[--]{2013/09--2014/01, Exchange student in Physics Department, National Tsing Hua University(NTHU), Taiwan; }funded by NTHU and USTC 
+%\item Successfully applied for  GPU/CPU/disk resources for machine learning experiments from the Cirrus cluster (EPCC, United Kingdom) in 2023. 
 %\end{itemize}
- 
- 
-\section{{\normalfont SERVICE}}
+
+%
+%\subsection{Management training}
+%% Specify any completed management training, including the time and extent of the training.
+%\begin{itemize}[leftmargin=*,noitemsep]
+%\item “Unconscious bias in personnel selection”, one-day online workshop for TRR Project Leaders. 6/14/2024, 9:00 –16:00. 
+%\item “Intercultural Competence”, half-day in-person workshop at TRR 181 Annual Retreat, 9/23/2024, 13:45 – 16:45.
+%\end{itemize}
+
+\section{Community Interaction}
 \begin{itemize}[leftmargin=*,noitemsep]
-\item[--]{Journal Referee: Nature Communications, Geophysical Research Letters, Journal of Fluid Mechanics, Journal of Physical Oceanography, Quarterly Journal of the Royal Meteorological Society, Journal of Advances in Modeling Earth Systems, Journal of Atmospheric and Oceanic Technology}
-%\item[--]{Student host for guest colloquium lunches (2019/09--2020/09)}
-\item[--]{Organizer: 2-week workshop on Theoretical and Practical Perspectives in Geophysical Fluid Dynamics (ICTS, India in May 2024, funded by ICTS and TRR181) (Workshop funding application and various organizational tasks.);  various regular local seminars at Courant Institute and University of Edinburgh.}
-\item[--]{Outreach: Courant cSplash lecturer (2019/04); collaboration with ICMS visiting fellow in music (2022/10-2023/10); presentation at an outreach session in Ocean Sciences meeting (2024/02).}
-%\item[--]{Social Volunteer and outreach: Courant cSplash (2019/04), NYC H2O (2018-2020), 
-%Sutton Trust Summer School Info Station (2023)}
-%\item[--]{Frequent volunteer of NYC H2O events including beach cleanups and landscapings}
-%\item[--]{Volunteer photographer at CAOS}
+\item In 04/2019, I volunteered as a lecturer at the Courant cSplash event taking place in New York, where I gave a lecture to high school students, explaining how to debunk flat-earth theories by the existence of variations in gravitational acceleration and the Coriolis force. 
+\item In 10/2022 – 10/2023, I collaborated with the ICMS Visiting Fellow in Music and contributed the development of a symphony musical piece that demonstrates some ideas in wave-mean interactions in the ocean. The musical piece was performed in Edinburgh (free to the public), and I gave an oral presentation about this experience, titled “`Resonance’, A Musical Response To Research In Geophysical Fluid Dynamics” at an outreach session in the Ocean Science Meeting in 2024/02
 \end{itemize}
-\end{resume}
 
-\pagenumbering{gobble}
 
-%Funded proposals
-%Canadian Space Agency; TRR 181
 
-\begin{flushright}
-Updated in May, 2025
-\end{flushright}
 
-%\let\thefootnote\relax\footnotetext{Updated in July, 2023}
-%\let\cleardoublepage\clearpage
-%\(\)
 
 \end{document}
+
+
+
+
 
